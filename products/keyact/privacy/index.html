@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy policy for KeyAct, the macOS text and voice workspace from RainDigit.">
+    <title>KeyAct Privacy Policy — DocHub</title>
+    <link rel="stylesheet" href="../../../assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../../" aria-label="DocHub home"><span class="brand-mark" aria-hidden="true"></span>DocHub</a>
+      <span class="meta">KeyAct</span>
+    </header>
+    <main class="article">
+      <a class="back" href="../">← KeyAct documents</a>
+      <p class="eyebrow">Privacy policy</p>
+      <h1>Your text stays under your control.</h1>
+      <p class="lead">KeyAct is a macOS menu-bar workspace. It does not require an account or use a developer-operated server to process your text or recordings.</p>
+      <p class="meta">Effective date: 28 September 2026</p>
+
+      <h2>Developer data collection</h2>
+      <p>RainDigit does not receive your text, translations, voice recordings, transcripts, clipboard contents, local history, or action responses through KeyAct. The app has no advertising, tracking, or third-party analytics SDK. This does not mean that every feature is offline: the network uses described below communicate directly with their destination services.</p>
+
+      <h2>Text and local history</h2>
+      <p>KeyAct processes text you type or provide through the clipboard. The full local edition can also read selected text from the foreground application after you grant Accessibility permission; the sandbox TestFlight edition does not use that access. Saved history, language preferences, shortcuts, and action definitions are stored on your Mac. You can clear history in Settings.</p>
+
+      <h2>Apple language services</h2>
+      <p>Translation and language analysis use available Apple frameworks and local resources. Preparing a missing resource can connect to Apple to download language data. The speech-recognition routes used by KeyAct require on-device recognition; an unsupported or unavailable local route is reported rather than silently replaced with a different language or a developer-hosted transcription service. Apple controls system downloads and permission dialogs.</p>
+
+      <h2>Voice notes and folder access</h2>
+      <p>KeyAct requests microphone access when you start recording and speech-recognition permission when transcription needs it. In audio mode, recordings are saved in the folder you choose. In transcript-only mode, audio is not kept as a saved recording. Transcripts can appear in local history. The sandbox edition saves a security-scoped bookmark so it can access your selected audio folder again. Revoking access may require choosing the folder again.</p>
+
+      <h2>Optional online dictionary lookup</h2>
+      <p>Look Up checks macOS dictionaries first. If no local definition is found and online fallback is enabled in Settings, KeyAct sends the entered word or short phrase to the English Wiktionary definition endpoint. Wikimedia can receive that term and normal connection information such as your IP address and the app's user-agent. Definitions may be English glosses even when the word is in another language. RainDigit does not proxy these requests. You can turn the fallback off in Settings → Look Up.</p>
+      <p>Wikimedia's handling of these requests is governed by its <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Privacy Policy</a>, not this policy.</p>
+
+      <h2>URLs, HTTP requests, and scripts</h2>
+      <p>Custom actions run only when you explicitly invoke them or use their configured shortcut. A URL or HTTP action sends the content you configure, including substituted clipboard text, directly to the destination you choose. That destination's privacy practices apply. Action definitions are local files, not a secure credential vault: do not put secrets in them.</p>
+      <p>The full local edition can run typed shell commands. The TestFlight edition instead runs executable scripts that you manually install in its Application Scripts folder, through Apple's NSUserUnixTask API. Your script can access resources or contact services according to its own behavior and macOS permissions. Only run scripts you trust. KeyAct captures their displayed output locally; it does not send that output to RainDigit.</p>
+
+      <h2>Apple distribution and support</h2>
+      <p>When you use TestFlight or enable Apple's diagnostic sharing, Apple may process beta feedback and crash information under its own terms. If you email RainDigit, we receive the information you choose to send and use it to handle your request. Do not include confidential text, recordings, passwords, or tokens.</p>
+
+      <h2>Your choices and deletion</h2>
+      <p>You can disable online dictionary fallback, remove custom actions, clear local history, revoke macOS permissions, and delete saved audio files. KeyAct has no developer-held account or cloud profile to delete. Removing the app does not necessarily remove files you saved outside its container; delete those separately if desired.</p>
+
+      <h2>Changes and contact</h2>
+      <p>We update this policy when the app's data practices change. For privacy questions, contact <a href="mailto:admin@raindigit.ie?subject=KeyAct%20privacy">admin@raindigit.ie</a>.</p>
+    </main>
+    <footer class="site-footer">
+      <span>© 2026 DocHub</span>
+      <a href="../support/">KeyAct support</a>
+    </footer>
+  </body>
+</html>

@@ -4,6 +4,9 @@ Public, version-controlled policy and support pages for independent applications
 
 ## Published routes
 
+- [`/products/keyact/`](products/keyact/) — KeyAct document index
+- [`/products/keyact/privacy/`](products/keyact/privacy/) — KeyAct privacy policy
+- [`/products/keyact/support/`](products/keyact/support/) — KeyAct support
 - [`/products/ping-light/`](products/ping-light/) — Ping Light document index
 - [`/products/ping-light/privacy/`](products/ping-light/privacy/) — Ping Light privacy policy
 - [`/products/ping-light/support/`](products/ping-light/support/) — Ping Light support

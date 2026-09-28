@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Support for KeyAct on macOS: language resources, recording, shortcuts, and custom actions.">
+    <title>KeyAct Support — DocHub</title>
+    <link rel="stylesheet" href="../../../assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../../" aria-label="DocHub home"><span class="brand-mark" aria-hidden="true"></span>DocHub</a>
+      <span class="meta">KeyAct</span>
+    </header>
+    <main class="article">
+      <a class="back" href="../">← KeyAct documents</a>
+      <p class="eyebrow">Support</p>
+      <h1>Help with KeyAct.</h1>
+      <p class="lead">Choose explicit languages, keep Apple resources ready, and use the tools supported on your Mac. The TestFlight edition requires macOS 15 or later.</p>
+
+      <h2>First launch and language resources</h2>
+      <p>The setup assistant helps you choose translation languages, visible tools, resources, and shortcuts. You can reopen it from Settings. Language menus use a catalog checked on first startup; “Add languages…” opens the resource step and refreshes what this Mac can offer.</p>
+      <p>A language available for translation is not necessarily available for Context, related words, spelling, or speech. Apple does not provide an in-app installer for every resource type. In particular, KeyAct cannot select or install a specific Apple Dictionary through the public lookup API. An unavailable feature must not be treated as successfully installed.</p>
+
+      <h2>What the tools do</h2>
+      <ul>
+        <li><strong>Translate:</strong> translates between the explicitly selected languages when the pair is supported and its resources are ready.</li>
+        <li><strong>Synonyms:</strong> finds model-related words; they are not all interchangeable synonyms.</li>
+        <li><strong>Context:</strong> labels word classes in a sentence, rather than performing complete syntactic or semantic analysis.</li>
+        <li><strong>Spell Check:</strong> uses macOS checking services; grammatical checks depend on the language and system support.</li>
+        <li><strong>Conjugation:</strong> generates English verb forms from rules and a built-in irregular list. It is not a multilingual conjugation dictionary.</li>
+        <li><strong>Look Up:</strong> uses Apple's dictionaries first, with optional Wiktionary fallback when no local definition is found.</li>
+        <li><strong>Voice Note:</strong> saves audio, produces a local transcript on a supported language route, or does both.</li>
+        <li><strong>Actions:</strong> opens configured URLs, sends HTTP requests, or invokes a trusted installed script in the TestFlight edition.</li>
+      </ul>
+
+      <h2>Recording and transcription</h2>
+      <p>Choose a speech language, output mode, and audio folder in Settings. Starting a recording requests the required macOS permissions. If you previously denied one, macOS may require changing it in System Settings → Privacy &amp; Security → Microphone or Speech Recognition. Audio-only mode does not need a transcription model.</p>
+      <p>If speech is not recognized, check the exact selected language, available local route, microphone input, and the displayed error. Support on one language does not establish support on another. If a saved folder becomes inaccessible, choose it again to renew access.</p>
+
+      <h2>Clipboard and scripts in TestFlight</h2>
+      <p>Copy text before invoking a text-based shortcut, or type it in KeyAct. This edition does not read another app's selected text or inject a replacement into that app.</p>
+      <p>Install an executable script manually in <code>~/Library/Application Scripts/ie.raindigit.keyact/</code>. Select it in the action editor and provide arguments, one per line. <code>{{text}}</code> substitutes clipboard text as a literal argument, not shell source. KeyAct does not install scripts for you.</p>
+      <div class="notice"><p>After 30 seconds KeyAct stops waiting, but Apple's script API cannot terminate the script. A timeout is not proof that it stopped; another script cannot start until the previous one finishes. Only use scripts you trust.</p></div>
+
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:admin@raindigit.ie?subject=KeyAct%20support">admin@raindigit.ie</a>. Include the macOS version, KeyAct version and build, tool, selected languages, steps, and exact error. A redacted screenshot can help.</p>
+      <p><strong>Do not email passwords, tokens, private request URLs, confidential clipboard text, or personal recordings.</strong></p>
+      <p>Read the <a href="../privacy/">KeyAct Privacy Policy</a> for the app's data handling.</p>
+    </main>
+    <footer class="site-footer">
+      <span>© 2026 DocHub</span>
+      <a href="../privacy/">Privacy policy</a>
+    </footer>
+  </body>
+</html>
