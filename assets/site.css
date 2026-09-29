@@ -69,6 +69,17 @@ strong { color: var(--ink); }
 .notice p { margin: 0; }
 .meta { color: var(--muted); font-size: 0.9rem; }
 .back { display: inline-flex; margin-top: 22px; color: var(--accent); font-weight: 700; text-decoration: none; }
+.language-nav, .product-links { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.product-links { margin: 24px 0; }
+.product-links a { display: inline-flex; min-height: 44px; align-items: center; padding: 8px 16px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; }
+.product-links a:first-child { color: var(--accent); }
+.product-preview { margin: 30px 0 38px; }
+.product-preview img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 20px; }
+.product-preview figcaption { margin-top: 10px; color: var(--muted); font-size: 0.9rem; }
+.steps { padding-left: 1.4rem; }
+.steps li + li { margin-top: 16px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+code { overflow-wrap: anywhere; }
 
 @media (max-width: 640px) {
   main { width: min(100% - 32px, 920px); }

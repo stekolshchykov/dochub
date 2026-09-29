@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="data:,">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="description" content="Support information for Ping Light, the macOS endpoint monitor from RainDigit.">
@@ -14,10 +15,33 @@
       <span class="meta">Ping Light</span>
     </header>
     <main class="article">
-      <a class="back" href="../">← Ping Light documents</a>
+      <a class="back" href="../">← Ping Light</a>
       <p class="eyebrow">Support</p>
       <h1>Help with Ping Light.</h1>
       <p class="lead">Ping Light monitors the HTTP endpoints you configure from a focused menu-bar popover on macOS.</p>
+
+      <h2 id="first-check">Your first useful check</h2>
+      <ol class="steps">
+        <li>Add a website or HTTP API you are authorised to check. Choose the request method, expected status, timeout and interval.</li>
+        <li>Run a check. Compare the result with the expected HTTP status; a response is not automatically a successful check.</li>
+        <li>Leave the app running for another scheduled check. The Mac must be awake and able to reach the endpoint.</li>
+      </ol>
+      <p>Only test failure and recovery against an endpoint you control or have permission to use. Do not deliberately interrupt somebody else's production service.</p>
+
+      <h2 id="notifications">No notification arrived</h2>
+      <p>Allow Ping Light in System Settings → Notifications, check alert settings in the app, and check Focus / Do Not Disturb. Notification delivery is controlled by macOS. A failed request in history does not itself prove that a visible notification was delivered.</p>
+      <p>Check the configured failure threshold and cooldown: not every repeated failure creates another alert. Recovery must follow a previously reported failure under the endpoint's settings.</p>
+
+      <h2>Sleep, offline and local networks</h2>
+      <p>Ping Light is not a cloud monitor. It cannot keep checking while the app is closed or the Mac sleeps. A missed period does not mean that the server was healthy during that period. After waking, confirm that checks resume and your connection is available.</p>
+      <p>For private-network endpoints, allow Local Network access when macOS requests it, verify the VPN / network route, and confirm the address works from this Mac. Local Network controls vary by macOS version. A denial is a permission problem, not necessarily an endpoint outage.</p>
+      <p>For automatic startup, enable launch at login in the app and verify it in macOS Login Items. Do not rely on scheduled checks until you have confirmed that the app has started.</p>
+
+      <h2>Authentication and request errors</h2>
+      <p>Re-enter expired credentials in the endpoint editor. Basic-auth passwords and bearer tokens are kept in macOS Keychain. A 401 / 403 response can indicate authentication or authorisation failure; a DNS error, timeout, TLS error or redirect has a different cause. Check the result rather than treating every failure as the same problem.</p>
+
+      <h2 id="export">Share a configuration safely</h2>
+      <p>Keychain credentials are not exported in configuration JSON. However, a URL's query string, a manually supplied header or a POST body may contain a secret. Review and redact exports yourself before sharing. Credentials may need to be entered again after import.</p>
 
       <h2>Before contacting support</h2>
       <ul>
