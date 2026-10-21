@@ -11,6 +11,13 @@ Public, version-controlled policy and support pages for independent applications
 - [`/products/ping-light/privacy/`](products/ping-light/privacy/) — Ping Light privacy policy
 - [`/products/ping-light/support/`](products/ping-light/support/) — Ping Light support
 
+- [`/products/pros-cons/`](products/pros-cons/) — Pros & Cons pre-release document index
+- [`/products/pros-cons/support/`](products/pros-cons/support/) — Pros & Cons support
+- [`/products/pros-cons/privacy/`](products/pros-cons/privacy/) — Pros & Cons privacy policy
+- [`/products/pros-cons/ru/`](products/pros-cons/ru/) — Pros & Cons Russian document index
+- [`/products/pros-cons/ru/support/`](products/pros-cons/ru/support/) — Pros & Cons Russian support
+- [`/products/pros-cons/ru/privacy/`](products/pros-cons/ru/privacy/) — Pros & Cons Russian privacy policy
+
 ## Product document convention
 
 Create a self-contained product directory under `products/<product-slug>/`:
